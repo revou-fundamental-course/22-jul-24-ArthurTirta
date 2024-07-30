@@ -1,0 +1,61 @@
+*{
+    font-family:'Times New Roman', Times, serif
+} 
+div>img{
+    border-radius: 10px;
+    max-height: 50px;
+    width :50px;
+}
+nav{
+ display: flex;
+ justify-content: space-between;
+}
+
+#tombol_nav{
+    align-content: center;
+}
+#tombol_nav>button{
+    height : 40px;
+    width : 100px;
+   
+}
+
+#Title{
+    text-align: center;
+}     
+#content{
+    display: flex;
+}
+section{
+    border: 1px solid black;
+    width :50%;
+    height : 500px;
+}
+
+#autoslide{
+    border: 1px solid black;
+    height: 85%;
+}
+
+#run-autoslide{
+    width: -webkit-fill-available;
+    max-height: -webkit-fill-available;
+}
+#Desc_Autos{
+    border: 1px solid black;
+    height: 15%;
+    display: flex;
+
+}
+#desc_desc_autos{
+    border: 1px solid black;
+    display: block;
+}
+article{
+    border: 1px solid black;
+    width: 50%;
+    height : 500px;
+    display: flex;
+    flex-direction:column;
+
+}
