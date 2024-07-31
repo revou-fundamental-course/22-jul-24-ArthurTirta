@@ -1,57 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-   
-    <script type="text/javascript" src="js/script.js"></script>
-</head>
-<body>
-    <nav>
-        <div>
-            <img id="f_profil" src="https://picsum.photos/200/300">
-        </div>
-        <div id="tombol_nav">
-            <button> Home</button>
-            <button>Our Package</button>
-            <button>Call us</button>
-        </div>
-
-    </nav>
-    <main>
-        <div id="Title">
-            <h2>You Trusted Travel Agent</h2>
-            <h5>Your happines is our happines</h5>
-        </div>
-        <div id="content">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/script.js"></script>
+    
+       
+    </head>
+    <body>
+        
+        <nav id="navigation">
+                <div>
+                    <img id="f_profil" src="https://picsum.photos/200/300">
+            </div>
+            <div id="tombol_nav">
+                <button onclick="scrollHome()">Home</button>
+                <button onclick="scrollOurPack()">Our Package</button>
+                <button onclick="scrollCallUs()">Call us</button>
+            </div>
             
-            <section >
-                <div id="autoslide">
-                    <img id ="run-autoslide" src="https://picsum.photos/200/300"" alt="any">
-                </div>
-                <div id="Desc_Autos">
-                    <div id="title_desc_autos">
-                        <img id ="desc-img" src="https://picsum.photos/200/300" alt="any">
+        </nav>
+
+    <main>
+        <div class="part1">
+
+            
+            <div id="Title">
+                <h2>You Trusted Travel Agent</h2>
+                <h6>Your happines is our happines</h6>
+            </div>
+            <div id="content">
+                
+                <section id="section-part1">
+                    <div id="autoslide">
+                        <div id="stock-image">
+                            <div class="gambar">
+                                <img  src="https://th.bing.com/th/id/OIP.jYos7VSVKpBF5VA1sF4IqAHaHa?w=180&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="1">
+
+                            </div>
+                            <div class ="gambar">
+                                <img  src="https://th.bing.com/th/id/OIP.k_RIgeM34msu0bEymd4XTAHaHa?w=196&h=196&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="2">
+
+                            </div>
+                            <div >
+                                <img class ="gambar" src="https://th.bing.com/th/id/OIP.bBUxvveQU_WJkmS4y2unQAHaHJ?w=222&h=214&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="3">
+                            </div>
+                        </div>
+                        <div>
+                            <button id="previous" onclick=plusDivs(-1)>P</button>
+                            <button id="next" onclick=plusDivs(1)>N</button>
+                        </div>
                     </div>
-                    <div id="desc_desc_autos">
-                        <h5>Lorem Ipsum</h5>
-                        <h6>Lorem Ipsum</h6>
+                    <div id="autoslide-2">
+
+                        <div id ="feedback">"Liburan Jadi Menyenangkan bersama Agentku"</div>
+                        <div id="Desc_Autos">
+                            <div id="title_desc_autos">
+                                <img id ="desc-img" src="https://picsum.photos/200/300" alt="any">
+                            </div>
+                            <div id="desc_desc_autos">
+                                <h5>Florence Hughes</h5>
+                                <h6>Ibu Rumah Tangga, 28</h6>
+                            </div>
+                        </div>
+                            
+                    <div id="autoslide-3">
+                        <h5> ecbucbe wbcewcipewcipewbcibceobcibc oewbcobcewuob cuoewbcu bubuodbjodbjodb qwlnqwsnqw spqwmsp qwinoo</h5>
+                        <div id="feat-1">
+                            <div>
+                                <h1>1</h1>
+                            </div>
+                            <h6>hehewhewoewo euoewhoewh edhewoudb ubde eduoew</h6>
+                        </div>
+                        <div id="feat-2">
+                            <div>
+                                <h1>1</h1>
+                            </div>
+                            <h6>hehewhewoewo euoewhoewh edhewoudb ubde eduoew</h6>
+                        </div>
+                        <div id="feat-3">
+                            <div>
+                                <h1>1</h1>
+                            </div>
+                            <h6>hehewhewoewo euoewhoewh edhewoudb ubde eduoew</h6>
+                        </div>
                     </div>
                 
+                    
                 </div>
             </section>
-            
-            
-            <article action="js/script.js" target="" method="get">
-                <input type="text">
-                <button type="submit"><img  src="https://picsum.photos/200/300"></button>
-            </article>
+            <form id="form-part1">
+                <h1> Contact Us</h1>
+                <h5>Sales akan menghubungi anda 1x24 jam setelah data kami terima </h5>
+                <label for="nama" >Your Name:</label>
+                <input type="text" id="id-nama" name="nama" placeholder="First and last name">
+                
+                <label for="email">Email Address: </label>
+                <input type="text" id="id-email" name="email" placeholder="example@email.com">
+                
+                <label for="interested">What are you interested in?</label>
+                <select  id="id-interested" name="interested" placeholder="Select Option" >
+                    <option value="" disabled selected>Select option</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                
+                <button id="submit">SEND</button>
+            </form>
         </div>
-    
-    </main>
-    <footer>
+            
+            
+        </div>
+        <div class="part2">
+            <div id="title-part2">
+                <h1>Our Package</h1>
+            </div>
+            <div id="country">
+                <div id="daerah1">
 
+                    <div class="name_c" id="Bali">
+                        <img src="https://picsum.photos/200/300" alt="any">
+                        <div>
+                            <h3 class="name_c">Bali</h3>
+                            <h6>Description</h6>
+                        </div>
+                    </div>
+                    <div class="name_c" id="Japan">
+                        <img src="https://picsum.photos/200/300" alt="any">
+                        <div>
+                            <h3 class="name_c">Bali</h3>
+                            <h6>Description</h6>
+                        </div>
+                    </div>
+                    <div class="name_c" id="Singapore">
+                        <img src="https://picsum.photos/200/300" alt="any">
+                        <div>
+                            <h3 class="name_c">Bali</h3>
+                            <h6>Description</h6>
+                        </div>
+                    </div>
+                </div>
+                <div  id="daerah2">
+
+                    <div class="name_c" id="Bandung">
+                        <img src="https://picsum.photos/200/300" alt="any">
+                        <div>
+                            <h3 class="name_c">Bali</h3>
+                            <h6>Description</h6>
+                        </div>
+                    </div>
+                    <div class="name_c" id="Surabaya">
+                        <img src="https://picsum.photos/200/300" alt="any">
+                        <div>
+                            <h3 class="name_c">Bali</h3>
+                            <h6>Description</h6>
+                        </div>
+                    </div>
+                    <div class="name_c" id="Third Feature">
+                        <img src="https://picsum.photos/200/300" alt="any">
+                        <div>
+                            <h3 class="name_c">Bali</h3>
+                            <h6>Description</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="part3">
+            <h1>  Your Closing Argument Headline</h1>
+            <h6> Desc</h6>
+            <button id="call">Call To Action</button>
+        </div>
+        
+    </main>
+
+    <footer>
+        
     </footer>
+    
 </body>
 </html>
