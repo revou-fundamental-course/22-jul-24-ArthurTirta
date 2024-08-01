@@ -4,21 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
-        <script type="text/javascript" src="js/script.js"></script>
+       
     
        
     </head>
     <body>
         
         <nav id="navigation">
-                <div>
-                    <img id="f_profil" src="https://picsum.photos/200/300">
+            <div>
+                <img id="f_profil" src="assets\Foto_prof.JPG">
             </div>
             <div id="tombol_nav">
                 <button onclick="scrollHome()">Home</button>
                 <button onclick="scrollOurPack()">Our Package</button>
                 <button onclick="scrollCallUs()">Call us</button>
             </div>
+            <!-- <img src="assets\Pattern Heading.jpg" alt="gambar pola" title="ini adalah pola Linear Pattern"> -->
             
         </nav>
 
@@ -35,33 +36,51 @@
                 <section id="section-part1">
                     <div id="autoslide">
                         <div id="stock-image">
-                            <div class="gambar">
-                                <img  src="https://th.bing.com/th/id/OIP.jYos7VSVKpBF5VA1sF4IqAHaHa?w=180&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="1">
+                                <div class="gambar">
 
-                            </div>
-                            <div class ="gambar">
-                                <img  src="https://th.bing.com/th/id/OIP.k_RIgeM34msu0bEymd4XTAHaHa?w=196&h=196&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="2">
+                                    <img  src="assets\testimoni-1.jpg" alt="1">
+                                </div>
+                                
+                                <div class ="gambar">
 
+                                    <img  src="assets\testimoni-2.jpg" alt="2">
+                                </div>
+                                
+                                <div class ="gambar">
+
+                                    <img  src="assets\testimoni-3.jpg" alt="3">
+                                </div>
+                                <div>
+                                </div>
                             </div>
-                            <div >
-                                <img class ="gambar" src="https://th.bing.com/th/id/OIP.bBUxvveQU_WJkmS4y2unQAHaHJ?w=222&h=214&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="3">
+                            <div id="button_image">
+
+                                <button id="previous" onclick="plusDivs(-1)"><</button>
+                                <button id="next" onclick="plusDivs(1)">></button>
                             </div>
                         </div>
-                        <div>
-                            <button id="previous" onclick=plusDivs(-1)>P</button>
-                            <button id="next" onclick=plusDivs(1)>N</button>
-                        </div>
-                    </div>
                     <div id="autoslide-2">
 
-                        <div id ="feedback">"Liburan Jadi Menyenangkan bersama Agentku"</div>
+                        <div class ="feedback">"Liburan Jadi Menyenangkan bersama Agentku"</div>
+                        <div class ="feedback">"Liburan Jadi Menyenangkan bersama Agentku-2"</div>
+                        <div class ="feedback">"Liburan Jadi Menyenangkan bersama Agentku-3"</div>
                         <div id="Desc_Autos">
                             <div id="title_desc_autos">
-                                <img id ="desc-img" src="https://picsum.photos/200/300" alt="any">
+                                <img class ="desc-img" src="assets\Person 1.jpeg" alt="any">
+                                <img class ="desc-img" src="assets\Person 2.jpeg" alt="any">
+                                <img class ="desc-img" src="assets\person3.jpeg" alt="any">
                             </div>
-                            <div id="desc_desc_autos">
-                                <h5>Florence Hughes</h5>
+                            <div class="desc_desc_autos">
+                                <h5>Agnes Christie</h5>
                                 <h6>Ibu Rumah Tangga, 28</h6>
+                            </div>
+                            <div class="desc_desc_autos">
+                                <h5>Bela Lilith</h5>
+                                <h6>Pemuda, 19</h6>
+                            </div>
+                            <div class="desc_desc_autos">
+                                <h5>Cyana Mayunda</h5>
+                                <h6>Ibu Rumah Tangga, 20</h6>
                             </div>
                         </div>
                             
@@ -90,24 +109,27 @@
                     
                 </div>
             </section>
-            <form id="form-part1">
+            <form id="form-part1"   autocomplete="off" >
                 <h1> Contact Us</h1>
                 <h5>Sales akan menghubungi anda 1x24 jam setelah data kami terima </h5>
                 <label for="nama" >Your Name:</label>
-                <input type="text" id="id-nama" name="nama" placeholder="First and last name">
+                <input type="text" id="id-nama" name="nama" placeholder="First and last name" autofocus >
                 
                 <label for="email">Email Address: </label>
-                <input type="text" id="id-email" name="email" placeholder="example@email.com">
+                <input type="text" id="id-email" name="email" placeholder="example@email.com" >
                 
                 <label for="interested">What are you interested in?</label>
-                <select  id="id-interested" name="interested" placeholder="Select Option" >
+                <select  id="id-interested" name="interested" placeholder="Select Option"  >
                     <option value="" disabled selected>Select option</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
+                    <option>Bali</option>
+                    <option>Bromo</option>
+                    <option>Toraja</option>
+                    <option>U.S.</option>
+                    <option>Morroco</option>
+                    <option>Italy</option>
                 </select>
-                
-                <button id="submit">SEND</button>
+                <h6 id =status-message></h6>
+                <button id="submit" onclick="ValidateForm()" type="submit">SEND</button>
             </form>
         </div>
             
@@ -121,48 +143,48 @@
                 <div id="daerah1">
 
                     <div class="name_c" id="Bali">
-                        <img src="https://picsum.photos/200/300" alt="any">
+                        <img class="img_c" src="assets\Bali.jpg" alt="any">
                         <div>
                             <h3 class="name_c">Bali</h3>
-                            <h6>Description</h6>
+                            <h6>An Indonesian island, Bali is a tropical paradise known for its lush rice terraces, stunning beaches, and vibrant Hindu culture. Visitors can explore ancient temples, enjoy water sports, and indulge in Balinese cuisine. Ubud, with its art scene and monkey forest, is a must-visit. </h6>
                         </div>
                     </div>
-                    <div class="name_c" id="Japan">
-                        <img src="https://picsum.photos/200/300" alt="any">
+                    <div class="name_c" id="Bromo">
+                        <img class="img_c"  src="assets\Bromo.jpg" alt="any">
                         <div>
-                            <h3 class="name_c">Bali</h3>
-                            <h6>Description</h6>
+                            <h3 class="name_c">Bromo</h3>
+                            <h6>Located in East Java, Indonesia, Mount Bromo is an active volcano surrounded by a vast, otherworldly landscape called the Sea of Sand. Visitors can hike to its crater rim for sunrise views and witness the smoking caldera. It’s a surreal experience! </h6>
                         </div>
                     </div>
-                    <div class="name_c" id="Singapore">
-                        <img src="https://picsum.photos/200/300" alt="any">
+                    <div class="name_c" id="Toraja">
+                        <img class="img_c" src="assets\Toraja.jpg" alt="any">
                         <div>
-                            <h3 class="name_c">Bali</h3>
-                            <h6>Description</h6>
+                            <h3 class="name_c">Toraja</h3>
+                            <h6> In South Sulawesi, Indonesia, Tana Toraja is known for its unique culture and elaborate funeral ceremonies. The Toraja people have distinctive architecture, traditional houses called “tongkonan,” and intricate wood carvings. The region’s lush hills and rice terraces add to its charm.</h6>
                         </div>
                     </div>
                 </div>
                 <div  id="daerah2">
 
-                    <div class="name_c" id="Bandung">
-                        <img src="https://picsum.photos/200/300" alt="any">
+                    <div class="name_c" id="Italy">
+                        <img class="img_c"  src="assets\Italy.jpg" alt="any">
                         <div>
-                            <h3 class="name_c">Bali</h3>
-                            <h6>Description</h6>
+                            <h3 class="name_c">Italy</h3>
+                            <h6>Known for its rich history, art, and cuisine, Italy is a country in southern Europe. It’s home to iconic landmarks like the Colosseum in Rome, the Leaning Tower of Pisa, and the canals of Venice. Italy is famous for its pasta, pizza, and gelato, as well as its beautiful coastlines along the Amalfi Coast and Cinque Terre. </h6>
                         </div>
                     </div>
-                    <div class="name_c" id="Surabaya">
-                        <img src="https://picsum.photos/200/300" alt="any">
+                    <div class="name_c" id="Morroco">
+                        <img class="img_c"  src="assets\Morroco.jpg" alt="any">
                         <div>
-                            <h3 class="name_c">Bali</h3>
-                            <h6>Description</h6>
+                            <h3 class="name_c">Morroco</h3>
+                            <h6>Located in North Africa, Morocco is a vibrant country with a mix of Arab, Berber, and European influences. Its bustling markets (souks), intricate architecture (such as in Marrakech), and the Sahara Desert are major attractions. Don’t miss out on trying traditional Moroccan mint tea!</h6>
                         </div>
                     </div>
-                    <div class="name_c" id="Third Feature">
-                        <img src="https://picsum.photos/200/300" alt="any">
+                    <div class="name_c" id="United States">
+                        <img class="img_c"  src="assets\United States.jpg" alt="any">
                         <div>
-                            <h3 class="name_c">Bali</h3>
-                            <h6>Description</h6>
+                            <h3 class="name_c">United States</h3>
+                            <h6>A diverse and vast country in North America, the United States is known for its cultural melting pot, natural wonders, and iconic cities. From the skyscrapers of New York City to the Grand Canyon in Arizona, there’s something for everyone. The U.S. is also famous for Hollywood, jazz music, and its national parks.</h6>
                         </div>
                     </div>
                 </div>
@@ -170,8 +192,8 @@
 
         </div>
         <div class="part3">
-            <h1>  Your Closing Argument Headline</h1>
-            <h6> Desc</h6>
+            <h1>  From Pixels to Passport Stamps: Our Journey Ends, Yours Begins</h1>
+            <h3> Lets take a step to manage all you will need for travel and consider "What can you see this website today will not you see again for next day so keep eye for that"  </h3>
             <button id="call">Call To Action</button>
         </div>
         
@@ -180,6 +202,6 @@
     <footer>
         
     </footer>
-    
+    <script type="text/javascript" src="js/script.js"></script>    
 </body>
 </html>
