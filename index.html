@@ -12,7 +12,7 @@
         
         <nav id="navigation">
             <div>
-                <img id="f_profil" src="assets\Foto_prof.JPG">
+                <h1>Yourney</h1>
             </div>
             <div id="tombol_nav">
                 <button onclick="scrollHome()">Home</button>
@@ -61,9 +61,9 @@
                         </div>
                     <div id="autoslide-2">
 
-                        <div class ="feedback">"Liburan Jadi Menyenangkan bersama Agentku"</div>
-                        <div class ="feedback">"Liburan Jadi Menyenangkan bersama Agentku-2"</div>
-                        <div class ="feedback">"Liburan Jadi Menyenangkan bersama Agentku-3"</div>
+                        <div class ="feedback">"Liburan Jadi Menyenangkan bersama Yourney"</div>
+                        <div class ="feedback">"Somuch Helpfull, Thankyou Yourney"</div>
+                        <div class ="feedback">"Cause Yourney i can see this easily"</div>
                         <div id="Desc_Autos">
                             <div id="title_desc_autos">
                                 <img class ="desc-img" src="assets\Person 1.jpeg" alt="any">
@@ -85,24 +85,24 @@
                         </div>
                             
                     <div id="autoslide-3">
-                        <h5> ecbucbe wbcewcipewcipewbcibceobcibc oewbcobcewuob cuoewbcu bubuodbjodbjodb qwlnqwsnqw spqwmsp qwinoo</h5>
+                        <h3> Why someone choose us depend other's?</h3>
                         <div id="feat-1">
                             <div>
                                 <h1>1</h1>
                             </div>
-                            <h6>hehewhewoewo euoewhoewh edhewoudb ubde eduoew</h6>
+                            <h6>Our brand leverages the latest advancements to provide seamless experiences, from intuitive interfaces to lightning-fast performance.</h6>
                         </div>
                         <div id="feat-2">
                             <div>
-                                <h1>1</h1>
+                                <h1>2</h1>
                             </div>
-                            <h6>hehewhewoewo euoewhoewh edhewoudb ubde eduoew</h6>
+                            <h6>Tailored to your unique needs, our brand offers customized solutions that enhance efficiency and drive growth.</h6>
                         </div>
                         <div id="feat-3">
                             <div>
-                                <h1>1</h1>
+                                <h1>3</h1>
                             </div>
-                            <h6>hehewhewoewo euoewhoewh edhewoudb ubde eduoew</h6>
+                            <h6>With 24/7 customer service, we’re committed to ensuring your satisfaction every step of the way. </h6>
                         </div>
                     </div>
                 
@@ -114,10 +114,12 @@
                 <h5>Sales akan menghubungi anda 1x24 jam setelah data kami terima </h5>
                 <label for="nama" >Your Name:</label>
                 <input type="text" id="id-nama" name="nama" placeholder="First and last name" autofocus >
-                
+                <p id="warn-name">Anda belum mengisi nama</p>
+
                 <label for="email">Email Address: </label>
-                <input type="text" id="id-email" name="email" placeholder="example@email.com" >
-                
+                <input type="email" id="id-email" name="email" placeholder="example@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+                <p id="warn-email">Anda belum mengisi email</p>
+
                 <label for="interested">What are you interested in?</label>
                 <select  id="id-interested" name="interested" placeholder="Select Option"  >
                     <option value="" disabled selected>Select option</option>
@@ -128,8 +130,9 @@
                     <option>Morroco</option>
                     <option>Italy</option>
                 </select>
-                <h6 id =status-message></h6>
-                <button id="submit" onclick="ValidateForm()" type="submit">SEND</button>
+                <p id="warn-interest">Anda belum memilih </p>
+                
+                <button id="submit"  type="submit"  >SEND</button>
             </form>
         </div>
             
@@ -193,14 +196,30 @@
         </div>
         <div class="part3">
             <h1>  From Pixels to Passport Stamps: Our Journey Ends, Yours Begins</h1>
-            <h3> Lets take a step to manage all you will need for travel and consider "What can you see this website today will not you see again for next day so keep eye for that"  </h3>
-            <button id="call">Call To Action</button>
+            <h3> Lets take a step to manage all you will need for travel and consider "What can you see on this website today will not you see again for next day so keep eye for that"  </h3>
+            <button id="call" onclick="scrollHome()">Call To Action</button>
         </div>
         
     </main>
 
     <footer>
-        
+        <div>
+            <h1>Yourney</h1>
+        </div>
+        <div>
+            <div>
+                <span>Term of Service</span>
+                <span>Privacy Policy</span>
+            </div>
+            <div>
+                <span>
+                    © 2024
+                </span>
+                <span>
+                    Yourney
+                </span>
+            </div>
+        </div>
     </footer>
     <script type="text/javascript" src="js/script.js"></script>    
 </body>

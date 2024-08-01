@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 
@@ -8,8 +9,9 @@ html{
     /* background-color: rgb(232, 232, 232); */
 }
 body{
-    background-image: url("../assets/Background.jpg");
+    /* background-image: url("../assets/Background.jpg"); */
     margin: 0px;
+    background-color:  rgb(192, 192, 192) ;
 }
 h6{
     color: gray;
@@ -21,7 +23,8 @@ h6{
 
 @media only screen and (max-width: 650px) {
 body {
-    background-image: url("../assets/Background.jpg");
+    /* background-image: url("../assets/Background.jpg"); */
+    background-color: rgb(192, 192, 192);
 }
 #navigation{
     flex-direction: column;
@@ -29,12 +32,25 @@ body {
     position: sticky;
     border-bottom: 3px solid black;
 }
-
+#navigation>div{
+    margin: 0px;
+    height: 40px;
+}
+#navigation>div{
+    margin: 0px;
+}
+#navigation>div>h1{
+    margin:0px
+}
  #tombol_nav{
     align-content: center;
     margin-top: 10px;
     margin-right: 10px;
+    margin: 5px;
 }   
+#Title{
+    height: 300px;
+}
 #content>#section-part1{
     width: -webkit-fill-available;
     margin-left: 10px;
@@ -53,9 +69,18 @@ body {
 }
 #feedback{
     text-align: left;
-   
+
+}
+#daerah1{
+    /* display: flex; */
+    flex-direction: column;
 }
 
+
+#daerah2{
+    /* display: flex; */
+    flex-direction: column;
+}
 }
 
 
@@ -76,7 +101,8 @@ div>#f_profil{
     width: 100%;
  display: flex;
  justify-content: space-between;
- background-image: url("../assets/1HeadingaPatern.jpg");
+ /* background-image: url("../assets/1HeadingaPatern.jpg"); */
+ background-color: white;
  border-bottom: 5px solid black;
 }
 
@@ -85,7 +111,8 @@ div>#f_profil{
 }
 #tombol_nav>button{
     height : 40px;
-    width : 100px;
+    width : 150px;
+    border-radius: 5px;
    
 }
 
@@ -97,7 +124,7 @@ div>#f_profil{
 #content{
     display: flex;
     background-color: white;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 
 }
 
@@ -117,6 +144,8 @@ div>#f_profil{
 }
 #autoslide{
     height: 500px;
+    background-color:rgb(192, 192, 192) ;
+    border-radius: 10px;
 }
 
 .gambar{
@@ -130,7 +159,7 @@ div>#f_profil{
 
 #previous, #next {
     /* cursor: pointer; */
-    /* position: absolute; */
+    /* position: relative; */
     /* top: 50%; */
     /* width: auto; */
     /* margin-top: -22px; */
@@ -139,8 +168,9 @@ div>#f_profil{
     font-weight: bold;
     font-size: 18px;
     transition: 1s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 5px;
     ;
+    width: 45%;
     /* user-select: none; */
 }
 #next {
@@ -169,6 +199,8 @@ div>.desc-img{
 #stock-image{
     height: 400px;
     text-align: center;
+    
+    
 }
 #stock-image>.gambar{
     height: 400px;
@@ -197,20 +229,23 @@ div>.desc-img{
 }
 #autoslide-3>div{
     display: flex;
+    height: 73px;
     
 }
 #autoslide-3>div>div{
     background-color: grey;
-    height: 27px;
+    height: 32px;
     border-radius: 50%;}
 
 #autoslide-3>div>h6{
     margin-left: 10px;
+    margin-top: 0px;
 }
 
 #autoslide-3>div>div>h1{
     width: 27px;
     text-align: center;
+    margin-top: 0px;
 }
 
 #form-part1{
@@ -244,34 +279,37 @@ form>label{
     border-radius: 5px;
     font-weight: 600;
 }
+#form-part1>p{
+    margin: 0px;
+    color: red;
+    visibility: hidden;
+}
 
 #submit {
     color: aliceblue;
     font-family: cursive;
     background-color:black;
     border-radius: 10px;
-    margin-top: 10%;
+    margin-top: 0px;
     height: 50px;
 
 }
-.part2{
-    
-}
+
 #title-part2{
     text-align: center;
 
 }
 #country{
     background-color: white;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 #daerah1{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
 }
 #daerah2{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
 }
 .name_c{
     margin-top: 14px;   
@@ -283,8 +321,8 @@ form>label{
 }
 #country>div>div{
     display: flex;
-    width :30%;
-    height: 200px;
+    /* width :30%;
+    height: 200px; */
     padding: 10px;
     /* border: 1px solid black; */
     margin: 10px;
@@ -306,4 +344,15 @@ form>label{
     background-color: black;
     color: white;
     border-radius: 3px;
+}
+
+footer>div{
+    text-align: center;
+    margin: 20px;
+}
+
+footer>div>div{
+    display: flex;
+    justify-content: space-around;
+    
 }

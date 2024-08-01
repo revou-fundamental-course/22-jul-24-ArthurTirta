@@ -48,24 +48,59 @@
     }
     
 // Form Validation
-function ValidateForm(){
+
 
   
-  let nama=document.getElementById("id-nama").value
+  
+
+
+
+
+
+
+submit.addEventListener('click', function (e) {
+
+  e.preventDefault();
+  let nama= document.getElementById("id-nama").value
   let email=document.getElementById("id-email").value
   let destination=document.getElementById("id-interested").value
 
-  Validation(nama,email,destination)
+  let valid=0
+  
+  validate_name(nama);
+  validate_email(email);
+  validate_dest(destination); 
+  
+ 
 
-
-
-  function Validation(a,b,c){
-    let z= document.getElementById("status-message")
-    if(a ==""|| b==""||c==""){pesan = "Mohon Lengkapi Data Diatas"}
-    else{pesan = "Pesanan Anda Berhasil Dikirimkan"}
-      z.innerHTML = pesan
-      confirm(pesan)
+  function validate_name(a){
+    if(a==""){document.getElementById("warn-name").style.visibility="visible";console.log("masuk email")}
+    else {document.getElementById("warn-name").style.visibility="hidden";console.log("masuk email")
+      valid+=1
     }
+    
+  }
+  function validate_email(b){
+    if(b==""){document.getElementById("warn-email").style.visibility="visible";console.log("masuk email")}
+    else {document.getElementById("warn-email").style.visibility="hidden";console.log("masuk email") 
+      valid+=1}
+    
+  }
+  function validate_dest(c){
+    if(c==""){document.getElementById("warn-interest").style.visibility="visible";console.log("masuk dest")}
+    else { document.getElementById("warn-interest").style.visibility="hidden";
+      console.log("masuk dest")
+      valid+=1
+    }
+      
+  }
+  if(valid==3){confirm("Permintaan anda berhasil dikirim")}
+    else{confirm("Permintaan anda gagal")}
+
+    // document.getElementById("id-nama").innerHTML
+    // document.getElementById("id-email").innerHTML=
+    // document.getElementById("id-interested").innerHTML=
   }
 
 
+)
